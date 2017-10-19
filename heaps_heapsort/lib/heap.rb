@@ -40,15 +40,23 @@ class BinaryMinHeap
 
     return array if children.empty?
 
-    if parent_value > array[children[0]]
-      array[parent_idx], array[children[0]] = array[children[0]], array[parent_idx]
-      BinaryMinHeap.heapify_down(array, children[0], len, &prc)
-    elsif parent_value > array[children[1]]
-      array[parent_idx], array[children[1]] = array[children[1]], array[parent_idx]
-      BinaryMinHeap.heapify_down(array, children[1], len, &prc)
-    else
-      array
+    if array[children[0]] < array[children[1]]
+      min_idx = children[0]
+      min_child = array[children[0]]
+    elsif array[children[0]] < array[children[1]]
+      min_idx = children[1]
+      min_child = array[children[1]]
     end
+
+    if prc.call(parent_value, min_child) == 1
+      return BinaryMinHeap.heapify_up(array, min_idx, len)
+    elsif parent_value >= min_child
+      return array
+    else
+      array[parent_idx], array[min_idx] = array[min_idx], array[parent_idx]
+      BinaryMinHeap.heapify_down(array, min_idx, len)
+    end
+    
   end
 
   def self.heapify_up(array, child_idx, len = array.length, &prc)
