@@ -52,6 +52,15 @@ class BinaryMinHeap
   end
 
   def self.heapify_up(array, child_idx, len = array.length, &prc)
-    
+    parent_idx = BinaryMinHeap.parent_index(child_idx)
+    parent_value = array[parent_idx]
+    child_value = array[child_idx]
+
+    if parent_value > child_valuee
+      array[parent_idx], array[child_idx] = array[child_idx], array[parent_idx]
+      BinaryMinHeap.heapify_up(array, parent_idx, len, &prc)
+    else
+      array
+    end
   end
 end
