@@ -61,8 +61,15 @@ class BinaryMinHeap
     min_child = array[min_idx]
     max_child = array[max_idx]
     
-    
-    if prc.call(parent_value, min_child) == 1
+    if prc.call(child_values[0], child_values[1]) == 1
+      chosen_child = child_values[1]
+      chosen_idx = children_idx[1]
+    else
+      chosen_child = child_values[0]
+      chosen_idx = children_idx[0]
+    end
+
+    if prc.call(parent_value, chosen_child) == 1
       idx = parent_value < min_child ? max_idx : min_idx
 
       array[parent_idx], array[idx] = array[idx], array[parent_idx]
