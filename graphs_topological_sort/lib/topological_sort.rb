@@ -1,68 +1,111 @@
 require_relative 'graph'
+require 'byebug'
 
 # Implementing topological sort using both Khan's and Tarian's algorithms
 
+# def topological_sort(vertices)
+#   sorted = []
+#   zero_in = []
+
+#   vertices.each do |vertex|
+#     zero_in.push(vertex) if vertex.in_edges.empty?  
+#   end
+
+#   until zero_in.empty?
+#     u = zero_in.shift
+#     sorted.push(u)
+#     until u.out_edges.empty? 
+#       edge = u.out_edges[0]
+#       to_vertex = edge.to_vertex
+#       edge.destroy!
+#       zero_in.push(to_vertex) if to_vertex.in_edges.empty?
+#     end
+#   end
+
+#   if sorted.length == vertices.length
+#     # sorted 
+#     sorted.map { |vertex| vertex.value }
+#   else
+#     []
+#   end
+# end
+
 def topological_sort(vertices)
   sorted = []
-  zero_in = []
+  visited = Hash.new
 
   vertices.each do |vertex|
-    zero_in.push(vertex) if vertex.in_edges.empty?  
+    tracker = Hash.new
+    return [] unless depth_first_search(vertex, visited, tracker, sorted)
   end
 
-  until zero_in.empty?
-    u = zero_in.shift
-    sorted.push(u)
-    until u.out_edges.empty? 
-      edge = u.out_edges[0]
-      to_vertex = edge.to_vertex
-      edge.destroy!
-      zero_in.push(to_vertex) if to_vertex.in_edges.empty?
-    end
-  end
+  sorted
+end
 
-  if sorted.length == vertices.length
-    sorted 
+def depth_first_search(vertex, visited_hash, stack, sorted_result)
+  if stack[vertex]
+    return false
+  elsif visited_hash[vertex]
+    return true
+  elsif vertex.out_edges.empty?
+    visited_hash[vertex] = 1
+    sorted_result.unshift(vertex)
   else
-    []
+    visited_hash[vertex] = 1
+    stack[vertex] = 1
+
+    vertex.out_edges.each do |edge|
+      if depth_first_search(edge.to_vertex, visited_hash, stack, sorted_result)
+        next
+      else
+        return false
+      end
+    end
+
+    sorted_result.unshift(vertex)
+    stack[vertex] = nil
+    true
   end
 end
 
 # load 'lib/topological_sort.rb'
 
-# vertices = []
-# v1 = Vertex.new(1)
-# v2 = Vertex.new(2)
-# v3 = Vertex.new(3)
-# v4 = Vertex.new(4)
-# v5 = Vertex.new(5)
-# v6 = Vertex.new(6)
-# v7 = Vertex.new(7)
-# v8 = Vertex.new(8)
+vertices = []
+v1 = Vertex.new(1)
+v2 = Vertex.new(2)
+v3 = Vertex.new(3)
+v4 = Vertex.new(4)
+v5 = Vertex.new(5)
+v6 = Vertex.new(6)
+v7 = Vertex.new(7)
+v8 = Vertex.new(8)
 
-# vertices.push(v1, v2, v3, v4, v5, v6, v7, v8)
+vertices.push(v1, v2, v3, v4, v5, v6, v7, v8)
 
-# # First test
-# 1.times do
-#   Edge.new(v1, v2)
-#   Edge.new(v1, v3)
-#   Edge.new(v2, v4)
-#   Edge.new(v3, v4)
-#   Edge.new(v2, v5)
-#   Edge.new(v4, v6)
-#   Edge.new(v5, v6)
-#   Edge.new(v6, v7)
-#   Edge.new(v7, v8)
-# end
+# First test
+1.times do
+  Edge.new(v1, v2)
+  Edge.new(v1, v3)
+  Edge.new(v2, v4)
+  Edge.new(v3, v4)
+  Edge.new(v2, v5)
+  Edge.new(v4, v6)
+  Edge.new(v5, v6)
+  Edge.new(v6, v7)
+  Edge.new(v7, v8)
+end
 
-# # Second test
-# Edge.new(v1, v2)
-# Edge.new(v1, v3)
-# Edge.new(v2, v4)
-# Edge.new(v3, v4)
-# Edge.new(v2, v5)
-# Edge.new(v4, v6)
-# Edge.new(v5, v6)
-# Edge.new(v6, v7)
-# Edge.new(v7, v8)
-# Edge.new(v8, v2)
+# Second test
+1.times do
+  Edge.new(v1, v2)
+  Edge.new(v1, v3)
+  Edge.new(v2, v4)
+  Edge.new(v3, v4)
+  Edge.new(v2, v5)
+  Edge.new(v4, v6)
+  Edge.new(v5, v6)
+  Edge.new(v6, v7)
+  Edge.new(v7, v8)
+  Edge.new(v8, v2)
+end
+
