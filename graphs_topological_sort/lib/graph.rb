@@ -38,6 +38,6 @@ class Edge
 end
 
 
-from_vertex = Vertex.new(nil)
-to_vertex = Vertex.new(nil)
-edge = Edge.new(from_vertex, to_vertex)
+# from_vertex = Vertex.new(nil)
+# to_vertex = Vertex.new(nil)
+# edge = Edge.new(from_vertex, to_vertex)
