@@ -13,7 +13,7 @@ The second line contains a single string, b.
 
 ## Output Format
 
-Print a single integer denoting the number of characters you must delete to make the two strings anagrams of each other.
+Print a single integer denoting the number of characters you must delete to make the two strings anagrams of each oather.
 
 **Sample Input**
 
