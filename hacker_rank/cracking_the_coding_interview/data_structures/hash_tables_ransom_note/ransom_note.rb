@@ -3,8 +3,17 @@
 # Check hashes 
 # Return No if the ransom note has more words than the magazine
 
+m,n = gets.strip.split(' ')
+m = m.to_i
+n = n.to_i
+magazine = gets.strip
+ransom = gets.strip
+
 def ransom_note(num_magazine, num_ransom, magazine_str, ransom_str)
-  return "No" if num_magazine < num_ransom
+  if num_magazine < num_ransom
+    puts "No"
+    return
+  end
 
   magazine_words = magazine_str.split(" ")
   ransom_words = ransom_str.split(" ")
@@ -19,8 +28,13 @@ def ransom_note(num_magazine, num_ransom, magazine_str, ransom_str)
 
   ransom_hash.each do |word, count|
     break if word.nil?
-    return "No" if count > magazine_hash[word]
+    if count > magazine_hash[word]
+      puts "No"
+      return
+    end
   end
 
-  "Yes"
+  puts "Yes"
 end
+
+ransom_note(m, n, magazine, ransom)
