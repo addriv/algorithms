@@ -22,18 +22,18 @@ If the list contains a cycle, your function must return true. If the list does n
 
 The following linked lists are passed as arguments to your function:
 
-##Sample Inputs
+## Sample Inputs
 
 <p align="center">
   <img src="https://s3.amazonaws.com/hr-challenge-images/1163/1463778594-900a0ae522-inputs.png"/>
 </p>
 
-##Sample Output
+## Sample Output
 
 0
 1
 
-Explanation
+## Explanation
 
 The first list has no cycle, so we return false and the hidden code checker prints **_0_** to stdout.
 The second list has a cycle, so we return true and the hidden code checker prints **_1_** to stdout.
