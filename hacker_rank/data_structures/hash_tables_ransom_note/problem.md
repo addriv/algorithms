@@ -6,7 +6,7 @@ Given the words in the magazine and the words in the ransom note, print Yes if h
 
 ## Input Format
 
-The first line contains two space-separated integers describing the respective values of  (the number of words in the magazine) and  (the number of words in the ransom note). 
+The first line contains two space-separated integers describing the respective values of  m(the number of words in the magazine) and  n(the number of words in the ransom note). 
 The second line contains  space-separated strings denoting the words present in the magazine. 
 The third line contains  space-separated strings denoting the words present in the ransom note.
 
