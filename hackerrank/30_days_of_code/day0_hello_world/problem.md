@@ -24,7 +24,7 @@ Welcome to 30 Days of Code!
 
 ## Sample Output
 
-Hello, World. 
+Hello, World.   
 Welcome to 30 Days of Code!
 
 ## Explanation

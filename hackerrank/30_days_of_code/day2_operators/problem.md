@@ -21,9 +21,9 @@ Print The total meal cost is totalCost dollars, where **_totalCost_** is the rou
 
 ## Sample Input
 
-12.00
-20
-8
+12.00  
+20  
+8  
 
 ## Sample Output
 
@@ -36,10 +36,10 @@ mealCost = 12, tipPercent = 20, taxPercent = 8
 
 Calculations: 
  
-tip = 12 * (20/100) = 2.4
-tax = 12 * (8/100) = 0.96
-totalCost = mealCost + tip + tax = 12 + 2.4 + 0.96 = 15.36
-round(totalCost) = 15
+tip = 12 * (20/100) = 2.4  
+tax = 12 * (8/100) = 0.96  
+totalCost = mealCost + tip + tax = 12 + 2.4 + 0.96 = 15.36  
+round(totalCost) = 15  
 
 We round **_totalCost_** to the nearest dollar (integer) and then print our result:
 
