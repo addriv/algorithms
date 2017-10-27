@@ -31,7 +31,7 @@ The total meal cost is 15 dollars.
 
 ## Explanation
 
-Given: 
+Given:  
 mealCost = 12, tipPercent = 20, taxPercent = 8 
 
 Calculations: 
