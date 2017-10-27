@@ -30,15 +30,15 @@ For each string, print whether or not the string of brackets is balanced on a ne
 
 ## Sample Input
 
-3
-{[()]}
-{[(])}
-{{[[(())]]}}
+3  
+{[()]}  
+{[(])}  
+{{[[(())]]}}  
 
 ## Sample Output
 
-YES
-NO
+YES  
+NO  
 YES
 
 
