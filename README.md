@@ -1,6 +1,6 @@
 # Algorithms
 
-This repo is for practicing various algorithms including sets from _Cracking the Coding Interview_ and HackerRank challenges.
+This is a collection of various algorithms including sets from _Cracking the Coding Interview_ and HackerRank challenges.
 
 ## Content
 
