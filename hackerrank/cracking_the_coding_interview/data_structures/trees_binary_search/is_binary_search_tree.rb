@@ -9,36 +9,14 @@ class Node
   end 
 end
 
-# Put data from each node in a tracking hash
-# BFS and check if each node is already in tracking hash
-# Return "No" if data is already in hash
-# Return "Yes" after BFS complete
-def checkBST(root)
-  data = Hash.new  
-
-  if BFS(root, data)
-    "YES"
-  else
-    "NO"
-  end
-end
-
 def BFS(node, data_hash)
-  return false if data_hash[node.data]
-  data_hash[node.data] = true
+  return false if node.nil?
   
-  children = []
-  children.push(node.left) if node.left != nil
-  children.push(node.right) if node.right != nil
-
-  children.each do |node|
-    return false unless BFS(node, data_hash)
-  end
-
-  p data_hash.keys
-
-  true
 end
+
+def checkBST(root):
+  return BFS(root, -1, 1 * 10^4)
+   
 
 # Test case tree
 a = Node.new(4)
