@@ -5,9 +5,12 @@ for a_i in (0..n-1)
 end
 
 # Create heap class
+# Heapify on every pushed integer
+# Heap sort in place and calculate median
+# Time complexity = O(n)
 class Heap
   def initialize
-    @heap = []
+    @store = []
   end
 
   def parent_idx(child_idx, length)
@@ -16,8 +19,13 @@ class Heap
     (child_idx - 1) / 2
   end
 
-  def child_idx(parent_idx, length)
-    children = [parent_idx * 2 +1, parent_idx * 2 + 2]
-    return nil if children.max > length - 1
+  def child_indices(parent_idx, length)
+    child_indices = []
+    (1..2).each do |num|
+      child_idx = parent_idx * 2 + num
+      child_indices.push(child_idx) if child_indices < length
+    end
+
+    child_indices
   end   
 end
