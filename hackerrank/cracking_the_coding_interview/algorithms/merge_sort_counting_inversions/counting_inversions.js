@@ -21,32 +21,37 @@ function readLine() {
 /////////////// ignore above this line ////////////////////
 
 function countInversions(arr, len = arr.length) {
-  // base case return nums if length <= 1
+  // base case if length less than 1
   if (arr.length <= 1) {
     return [arr, 0];
   }
 
-  let numInversions = 0;
-
+  // Get midpoint and split array
   const mid = Math.floor(arr.length / 2);
   const arr1 = arr.slice(0, mid);
   const arr2 = arr.slice(mid);
 
+  // Merge sort left and right splits
   const left = countInversions(arr1, len);
   const right = countInversions(arr2, len);
 
+  // Merge back while passing the inversion count
   const merged = merge(left[0], right[0], left[1] + right[1]);
-  numInversions += merged[1];
 
+  // If the merged array is equal to original array length, return count
+  // Else, return an array with the merged array and count
   if (merged[0].length === len) {
-    return numInversions;
+    return merged[1];
   }
   else {
-    return [merged[0], numInversions];
+    return [merged[0], merged[1]];
   }
 }
 
 function merge(left, right, inversions) {
+  // Create a sorted array
+  // Shift off the lesser of left or right until one is empty
+  // Add inversion count of left array length if left[0] is greater than right[0]
   let sorted = [];
   while (left.length > 0 && right.length > 0) {
     if (left[0] > right[0]) {
