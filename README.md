@@ -12,9 +12,11 @@ This is a collection of various algorithms including sets from _Cracking the Cod
 
 **30 Days of Code**
 
-| Title | Problem Statement | Solutions |
-|-------|-------------------|-----------|
-|Day 0: Hello World|[Problem](hackerrank/30_days_of_code/day0_hello_world/problem.md)|           |
+|          Title   |                            Problem Statement                    |                         Solutions                                      |
+|------------------|-----------------------------------------------------------------|------------------------------------------------------------------------|
+|Day 0: Hello World|[Problem](hackerrank/30_days_of_code/day0_hello_world/problem.md)|[JavaScript](hackerrank/30_days_of_code/day0_hello_world/hello_world.js)|
+|                  |                                                                 |[Ruby](hackerrank/30_days_of_code/day0_hello_world/hello_world.rb)      |
+|                  |                                                                 |[Python](hackerrank/30_days_of_code/day0_hello_world/hello_world.py)    |
 
 
 * **HackerRank**
