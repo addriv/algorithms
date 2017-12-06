@@ -5,14 +5,17 @@ This is a collection of various algorithms including sets from _Cracking the Cod
 ## Directory
 
 ### Practice
+
 [Mini Projects](https://github.com/addriv/algorithms/tree/master/practice/mini_projects)
 
-| Category | Sub | Problem Statement | Solutions |
-|----------|-----|-------------------|-----------|
-| hi       | he  |                   |           |
-
-
 ### Hacker Rank
+
+**30 Days of Code**
+
+| Title | Problem Statement | Solutions |
+|-------|-------------------|-----------|
+|Day 0: Hello World|[Problem](hackerrank/30_days_of_code/day0_hello_world/problem.md)|           |
+
 
 * **HackerRank**
   * 30 Days of Code
