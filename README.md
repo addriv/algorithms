@@ -18,3 +18,6 @@ This is a collection of various algorithms including sets from _Cracking the Cod
       * [Hash Tables: Ransom Note](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/hash_tables_ransom_note/problem.md)
       * [Linked Lists: Detect a Cycle](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/linked_lists_detect_cycle/problem.md)
       * [Stacks: Balanced Brackets](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/stacks_balanced_brackets/problem.md)
+      * [Trees: Binary Search](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/trees_binary_search/problem.md)
+      * [Heaps: Running Median](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/heaps_running_median/problem.md)
+      * [Queues: Two Stacks](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/problem.md)
