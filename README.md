@@ -2,15 +2,26 @@
 
 This is a collection of various algorithms including sets from _Cracking the Coding Interview_ and HackerRank challenges.
 
-## Content
+## Directory
 
-* **Practice**
-  * Mini Projects
+### Practice
+[Mini Projects](https://github.com/addriv/algorithms/tree/master/practice/mini_projects)
+
+| Category | Sub | Problem Statement | Solutions |
+|----------|-----|-------------------|-----------|
+| hi       | he  |                   |           |
+
+
+### Hacker Rank
+
 * **HackerRank**
   * 30 Days of Code
     * [Day 0: Hello World](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day0_hello_world/problem.md)
     * [Day 1: Data Types](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day1_data_types/problem.md)
     * [Day 2: Operators](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day2_operators/problem.md)
+    * [Day 3: Conditionals](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day3_conditionals/problem.md)
+    * [Day 4: Class vs. Instance](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day4_class_vs_instance/problem.md)
+    * [Day 5: Loops](https://github.com/addriv/algorithms/blob/master/hackerrank/30_days_of_code/day5_loops/problem.md)
   * _Cracking The Coding Interview_
     * Data Structures
       * [Arrays: Left Rotation](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/problem.md)
