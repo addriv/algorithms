@@ -1,6 +1,6 @@
 # Algorithms
 
-This is a collection of various algorithms including sets from _Cracking the Coding Interview_ and HackerRank challenges.
+This is a collection of various algorithms used for practice including sets from _Cracking the Coding Interview_ and HackerRank challenges.
 
 ## Directory
 
