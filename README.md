@@ -6,7 +6,7 @@ This is a collection of various algorithms including sets from _Cracking the Cod
 
 ### Practice
 
-[Mini Projects](https://github.com/addriv/algorithms/tree/master/practice/mini_projects)
+[Mini Projects](practice/mini_projects)
 
 ### Hacker Rank
 
