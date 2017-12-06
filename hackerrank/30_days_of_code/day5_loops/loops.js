@@ -22,5 +22,8 @@ function readLine() {
 
 function main() {
   var n = parseInt(readLine());
- 
+  // Iterate through 10 times and print corresponding result
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${n} x ${i} = ${i*n}`);
+  }
 }
