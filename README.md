@@ -28,16 +28,10 @@ _Data Structures_
 |          Title        |                            Problem Statement                    |                         Solutions                                      |
 |-----------------------|-----------------------------------------------------------------|------------------------------------------------------------------------|
 | Arrays: Left Rotation | [Problem](hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/left_rotation.rb)|
-
-
-* **HackerRank**
-  * _Cracking The Coding Interview_
-    * Data Structures
-      * [Arrays: Left Rotation](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/problem.md)
-      * [Strings: Making Anagrams](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/strings_making_anagrams/problem.md)
-      * [Hash Tables: Ransom Note](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/hash_tables_ransom_note/problem.md)
-      * [Linked Lists: Detect a Cycle](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/linked_lists_detect_cycle/problem.md)
-      * [Stacks: Balanced Brackets](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/stacks_balanced_brackets/problem.md)
-      * [Trees: Binary Search](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/trees_binary_search/problem.md)
-      * [Heaps: Running Median](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/heaps_running_median/problem.md)
-      * [Queues: Two Stacks](https://github.com/addriv/algorithms/blob/master/hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/problem.md)
+| Strings: Making Anagrams| [Problem](hackerrank/cracking_the_coding_interview/data_structures/strings_making_anagrams/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/strings_making_anagrams/making_anagrams.rb)|
+| Hash Tables: Ransom Note| [Problem](hackerrank/cracking_the_coding_interview/data_structures/hash_tables_ransom_note/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/hash_tables_ransom_note/ransom_note.rb)|
+| Linked Lists: Detect a Cycle | [Problem](hackerrank/cracking_the_coding_interview/data_structures/linked_lists_detect_cycle/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/linked_lists_detect_cycle/detect_cycle.rb), [Python](hackerrank/cracking_the_coding_interview/data_structures/linked_lists_detect_cycle/detect_cycle.py)|
+| Stacks: Balanced Brackets | [Problem](hackerrank/cracking_the_coding_interview/data_structures/stacks_balanced_brackets/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/stacks_balanced_brackets/balanced_brackets.rb)|
+| Trees: Binary Search | [Problem](hackerrank/cracking_the_coding_interview/data_structures/trees_binary_search/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/trees_binary_search/is_binary_search_tree.rb), [Python](hackerrank/cracking_the_coding_interview/data_structures/trees_binary_search/is_binary_search_tree.py)|
+| Heaps: Running Median | [Problem](hackerrank/cracking_the_coding_interview/data_structures/heaps_running_median/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/heaps_running_median/find_the_running_median.rb)|
+| Queues: Two Stacks| [Problem](hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/a_tale_of_two_stacks.rb)|
