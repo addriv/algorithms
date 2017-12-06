@@ -22,7 +22,13 @@ This is a collection of various algorithms including sets from _Cracking the Cod
 |Day 5: Loops |[Problem](hackerrank/30_days_of_code/day5_loops/problem.md)|[JavaScript](hackerrank/30_days_of_code/day5_loops/loops.js), [Ruby](hackerrank/30_days_of_code/day5_loops/loops.rb), [Python](hackerrank/30_days_of_code/day5_loops/loops.py)                                                       |
 
 **Cracking The Coding Interview**
-[Test](cracking_the_coding_interview)
+
+_Data Structures_
+
+|          Title        |                            Problem Statement                    |                         Solutions                                      |
+|-----------------------|-----------------------------------------------------------------|------------------------------------------------------------------------|
+| Arrays: Left Rotation | [Problem](hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/arrays_left_rotation/left_rotation.rb)|
+
 
 * **HackerRank**
   * _Cracking The Coding Interview_
