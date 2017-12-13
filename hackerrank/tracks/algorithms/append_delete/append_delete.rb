@@ -6,10 +6,8 @@
 
 # 15mins
 def append_delete(k,s,t)
-  return "Yes" if s == t
-
   i = 0
-  while s[0..i] == t[0..i]
+  while s[0..i] == t[0..i] && i < s.length
     i += 1
   end
 
@@ -17,10 +15,11 @@ def append_delete(k,s,t)
   # appends = t.length - deletes
   deletes = s.length - i
   appends = t.length - i
+  minimum = deletes + appends
 
-  if deletes + appends > k
-    "No"
+  print minimum
+  if (k - minimum).even?
   else
-    "Yes"
+    "No"
   end
 end
