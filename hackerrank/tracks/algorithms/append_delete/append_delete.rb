@@ -17,9 +17,14 @@ def append_delete(k,s,t)
   appends = t.length - i
   minimum = deletes + appends
 
-  print minimum
-  if (k - minimum).even?
+  # print minimum
+  if minimum > k
+    if (k - minimum).even?
+      "Yes"
+    else
+      "No"
+    end
   else
-    "No"
+    "Yes"
   end
 end
