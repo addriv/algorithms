@@ -2,6 +2,7 @@
 # A modified kaprekar number is a positive whole numver such that when we split 
 # its square in half, the left and right side add up to the number
 # If there are odd number of digits, the right side will be the longer half
+# Print "INVALID RANGE" if no modified kaprekar numbers exist between given range
 
 def modified_kaprekars(p,q)
   modified_kaprekars = []
