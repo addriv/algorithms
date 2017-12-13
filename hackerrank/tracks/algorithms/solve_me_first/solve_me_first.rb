@@ -1,7 +1,7 @@
 # Return the sum of two integers read from stdin.
 
 def solve_me_first (a, b)
-  return a + b
+  a + b
 end
 
 val1 = gets.to_i
