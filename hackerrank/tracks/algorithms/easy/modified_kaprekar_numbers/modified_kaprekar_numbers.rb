@@ -13,7 +13,15 @@ def modified_kaprekars(p,q)
 end
 
 def is_modified_kaprekar?(n)
+  square = (n**2).to_s
+  mid = square.length / 2
+  left = square[0...mid]
+  right = square[mid..-1]
 
-
+  if left.to_i + right.to_i == n
+    true
+  else
+    false
+  end
 end
 
