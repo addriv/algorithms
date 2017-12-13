@@ -3,16 +3,19 @@
 # Better solution, iterate through once. Use hash table to check if values exist
 
 def picking_numbers(nums)
-  integers = Hash.new
-  count = 0
+  integers = Hash.new(0)
+  max = 0
 
   nums.each do |n|
-    count += 1 if integers[n - 1]
-    count += 1 if integers[n + 1]
-    count += 1 if integers[n]
-
     integers[n] += 1
   end
 
-  count
+  nums.each do |n|
+    total1 = integers[n] + integers[n + 1]
+    total2 = integers[n] + integers[n - 1]
+    max_total = [total1, total2].max
+    max = max_total if max_total > max
+  end
+
+  max
 end
