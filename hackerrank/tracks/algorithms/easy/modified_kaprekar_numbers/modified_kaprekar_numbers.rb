@@ -4,6 +4,15 @@
 # If there are odd number of digits, the right side will be the longer half
 # Print "INVALID RANGE" if no modified kaprekar numbers exist between given range
 
+# Steps
+# 1. Create helper method  
+#   - Convert square to a string to allow for splitting
+#   - Check if each half adds to number
+# 2. Create main method to take in the range
+#   - Iterate through each number within the range and check for modified kaprekar
+#   - Print out joined numbers
+#   - Print "INVALID RANGE" if no modified kaprekar numbers exist
+
 def modified_kaprekars(p,q)
   modified_kaprekars = []
 
