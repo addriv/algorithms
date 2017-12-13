@@ -4,27 +4,39 @@
 def bigger_is_greater(str)
   transformed = str.dup
 
-  i = -2
+  i = -1
   while i > -transformed.length
     break if transformed[i..-1] < transformed[i..-1].reverse
     i -= 1
   end
+  
+  i += str.length
+  
   left = transformed.split("")
-            .take(i)
+                    .take(i)
+  
   right = transformed.split("")
-             .drop(i)
-             .sort
+                     .drop(i)
+                     .sort  
 
   right.each_with_index do |ch,idx|
     next if ch == str[i]
     if ch > str[i]
-      right[0], right[idx] = right[idx], right[0] 
+      right.delete(ch)
+      right.unshift(ch)
+      #right[0], right[idx] = right[idx], right[0] 
       break
     end
   end
 
-  left + right
-
+  new_str = left.join + right.join
+  
+  if new_str == str
+    "no answer"
+  else
+    new_str
+  end
+   
   # str[i], str[i + 1] = str[i + 1], str[i]
   # str
 end
