@@ -1,7 +1,8 @@
 # Given an array of integers, find the max number pairs that are <= 1 from each other
-# Naive solution, O(n) = n^2 to check each pair iteratively
-# Better solution, iterate through once. Use hash table to check if values exist
+# Use hash tables to track which numbers are in the array at constant time
+# Iterate through each integer, add up integers that are within <= 1
 
+# 18:18 
 def picking_numbers(nums)
   integers = Hash.new(0)
   max = 0
