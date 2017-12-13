@@ -5,7 +5,9 @@
 # First find up to what index is the same
 
 # 15mins
-def append_delete(k,s,t)  
+def append_delete(k,s,t)
+  return "Yes" if s.length + t.length < k
+    
   i = 0
   while s[0..i] == t[0..i] && i < s.length
     i += 1
@@ -19,12 +21,12 @@ def append_delete(k,s,t)
 
   # print minimum
   if minimum > k
+    "No"
+  else
     if (k - minimum).even?
       "Yes"
     else
       "No"
     end
-  else
-    "Yes"
   end
 end
