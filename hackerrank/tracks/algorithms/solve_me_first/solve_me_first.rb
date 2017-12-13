@@ -1,0 +1,1 @@
+# Return the sum of two integers read from stdin.
