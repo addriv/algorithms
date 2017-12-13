@@ -1,3 +1,8 @@
+# Given a range from p to q(inclusive), print all modified kaprekar numbers in a line
+# A modified kaprekar number is a positive whole numver such that when we split 
+# its square in half, the left and right side add up to the number
+# If there are odd number of digits, the right side will be the longer half
+
 def modified_kaprekars(p,q)
   modified_kaprekars = []
 
