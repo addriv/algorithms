@@ -14,12 +14,15 @@
 #   - Print "INVALID RANGE" if no modified kaprekar numbers exist
 
 def modified_kaprekars(p,q)
+  # Assign new array
   modified_kaprekars = []
 
+  # Iterate through the range and check for modified kaprekar numbers
   (p..q).each do |n|
     modified_kaprekars << n if is_modified_kaprekar?(n)
   end
   
+  # Print invalid if no kaprekars found, else print kaprekars in a line
   if modified_kaprekars.empty?
     "INVALID RANGE"
   else
@@ -28,11 +31,17 @@ def modified_kaprekars(p,q)
 end
 
 def is_modified_kaprekar?(n)
+  # Get square and convert to string
   square = (n**2).to_s
+
+  # Find middle point of square
   mid = square.length / 2
+
+  # Split to two halves with right side having longer digits
   left = square[0...mid]
   right = square[mid..-1]
 
+  # Check if each half sums to n
   if left.to_i + right.to_i == n
     true
   else
