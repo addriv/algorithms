@@ -82,7 +82,7 @@ def non_divisible_subset(s, k)
   modulos_hash.each do |modulo, count|
     pair = k - modulo
     if modulo == 0
-      max_size - modulos_hash[modulo] - 1
+      max_size -= (modulos_hash[modulo] - 1)
 
       # TEST
       subsets << modulo
