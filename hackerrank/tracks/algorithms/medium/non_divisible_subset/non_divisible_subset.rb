@@ -77,3 +77,20 @@ end
 n, k = gets.strip.split.map(&:to_i)
 s = gets.strip.split.map(&:to_i)
 puts non_divisible_subset(s, k)
+
+
+# ================== HackerRank Top Submission from MartinQc ==================
+# n,k=gets.split.map(&:to_i)
+# a=[0]*k
+# gets.split.each{|i|a[i.to_i%k]+=1}
+# if k==1
+#     p 1
+#     exit
+# end
+# r = 0
+# (1..(k-1)/2).each do |i|
+#     r += [a[i],a[-i]].max
+# end
+# r+=1 if a[0]>0
+# r+=1 if k.even? && a[-1]>0
+# p r
