@@ -40,7 +40,6 @@ end
 
 # More efficient solution: Use hash tables for checking if matching pair integer exists
 # Start with max size which equals the length of S
-
 # Iterate through all of S, create a hash table with n % k as the key
 # if matching pair exists in table, increase count
 # Max size = s.length
