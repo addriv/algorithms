@@ -37,6 +37,7 @@ _Data Structures_
 | Queues: Two Stacks| [Problem](hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/problem.md)| [Ruby](hackerrank/cracking_the_coding_interview/data_structures/queues_two_stacks/a_tale_of_two_stacks.rb)|
 
 _Algorithms_
+
 |          Title                                      |          Problem Statement                    |             Solutions                                      |
 |-----------------------------------------------------|-----------------------------------------------|------------------------------------------------------------|
 | Binary Search: Ice Cream Parlor | [Problem](hackerrank/cracking_the_coding_interview/algorithms/binary_search_ice_cream_parlor/problem.md) | [JavaScript](hackerrank/cracking_the_coding_interview/algorithms/binary_search_ice_cream_parlor/ice_cream_parlor.js)                                                           |
