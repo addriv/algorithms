@@ -11,12 +11,13 @@ def queue_stacks(str, stack)
   elsif input[0] == 3
     puts stack[0]
   end
-  
+
   stack
 end
 
 stack = []
 
+# test
 q.times do
   input = gets.chomp
   stack = queue_stacks(input, stack)
