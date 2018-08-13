@@ -23,7 +23,6 @@
 # Naive Solution = O(n^2) time complexity
 def climbingLeaderboard(scores, alice)
     results = []
-    i = 0
     unique_scores = scores.uniq
     
     alice.each do |alice_score|
@@ -39,22 +38,3 @@ def climbingLeaderboard(scores, alice)
         
     return results
 end
-
-# function climbingLeaderboard(scores, alice) {
-#     const results = [];
-#     alice.forEach(score => {
-#         let place = 1;
-#         let i;
-#         for (i = 0; i < scores.length; i++) {
-#             if (scores[i] === scores[i - 1]) {
-#                 continue;
-#             } else if (score < scores[i]) {
-#                 place++;
-#             } else {
-#                 break;
-#             }
-#         }
-#         results.push(place);
-#     });
-#     return results;
-# }
